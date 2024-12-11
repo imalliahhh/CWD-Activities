@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Buttons</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="light-green-text text-darken-1">Buttons</h1>
+        <div class="divider"></div>
+        <br>
+        <p>There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.</p>
+        <h2 class="light-green-text text-darken-1">Raised</h2>
+
+        <a class="waves-effect waves-light btn light-green">button</a>
+        <a class="waves-effect waves-light btn light-green"><i class="fa-solid fa-cloud left"></i>button</a>
+        <a class="waves-effect waves-light btn light-green"><i class="fa-solid fa-cloud right"></i>button</a>
+
+        <br><br>
+        <h3 class="light-green-text text-darken-1">Floating</h3>
+        <a class="btn-floating btn-large waves-effect waves-light light-green">
+            <i class="fa-solid fa-circle-plus"></i>
+        </a>
+        <h4>Floating Action Button</h4>
+        <p>See the documentation on <a href="https://materializecss.com/floating-action-button.html" target="_blank">this page</a></p>
+        <br>
+        <h3 class="light-green-text text-darken-1">Flat</h3>
+        <p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
+        <a href="https://m2.material.io/components/buttons" target="_blank" class="waves-effect waves-green btn-flat">Button</a>
+        <br>
+        <h3 class="light-green-text text-darken-1">Submit Button</h3>
+        <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
+        <button class="btn waves-effect waves-light light-green" type="submit" name="action">Submit
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <br>
+        <h3 class="light-green-text text-darken-1">Large</h3>
+        <p>This button has a larger height for buttons that need more attention.</p>
+        <a class="waves-effect waves-light btn-large light-green">button</a>
+        <a class="waves-effect waves-light btn-large light-green"><i class="fa-solid fa-cloud left"></i>button</a>
+        <a class="waves-effect waves-light btn-large light-green"><i class="fa-solid fa-cloud right"></i>button</a>
+        <br>
+        <h3 class="light-green-text text-darken-1">Small</h3>
+        <p>When mouse and keyboard are the primary input methods, this smaller button is useful for denser UI layouts.</p>
+        <a class="waves-effect waves-light btn-small light-green">button</a>
+        <a class="waves-effect waves-light btn-small light-green"><i class="fa-solid fa-cloud left"></i>button</a>
+        <a class="waves-effect waves-light btn-small light-green"><i class="fa-solid fa-cloud right"></i>button</a>
+        <br>
+        <h3 class="light-green-text text-darken-1">Disabled</h3>
+        <p>This style can be applied to all button types</p>
+        <a class="waves-effect waves-light btn-large light-green disabled">button</a>
+        <a class="waves-effect waves-light btn-small light-green disabled"><i class="fa-solid fa-cloud left"></i>button</a>
+        <a class="waves-effect waves-green btn-flat disabled">Button</a>
+        <a class="btn-floating btn-large waves-effect waves-light red disabled">
+            <i class="fa-solid fa-circle-plus"></i>
+        </a>
+
+        <br><br><br><br>
+        <!-- Floating Action Button -->
+        <h3 class="light-green-text text-darken-1">Floating Action Button</h3>
+        <div class="divider"></div>
+        <p>If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page.</p>
+        
+        <div class="fixed-action-btn toolbar">
+            <a class="btn-floating btn-large waves-effect waves-light light-green">
+                <i class="fa-solid fa-circle-plus"></i>
+            </a>
+            <ul>
+                <li>
+                    <a href="https://fontawesome.com/" class="red"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                    <a href="https://fontawesome.com/search" class="yellow darken-1"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                    <a href="https://fontawesome.com/account/general" class="green"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li>
+                    <a href="https://fontawesome.com/support" class="blue"><i class="fa-solid fa-headset"></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div style="height: 1000px;"></div>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/e0b5c5853d.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.fixed-action-btn').floatingActionButton({
+                direction: 'top',
+                hoverEnabled: false,
+                toolbarEnabled: true
+                
+            });
+        });
+    </script>
+
+    
+</body>
+</html>

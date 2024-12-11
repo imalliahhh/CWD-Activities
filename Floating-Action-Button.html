@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Floating Action Button</title>
+</head>
+<body>
+
+    <!-- Floating Button Demo -->
+    <div class="fixed-action-btn circle">
+        <a class="btn-floating btn-large waves-effect waves-light light-green">
+            <i class="fa-solid fa-circle-plus"></i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating red circle"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li>
+                <a class="btn-floating yellow darken-1 circle"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <li>
+                <a class="btn-floating green circle"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li>
+                <a class="btn-floating blue circle"><i class="fa-solid fa-image"></i></a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div style="height: 1000px;"></div>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/e0b5c5853d.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.fixed-action-btn').floatingActionButton({
+                direction: 'left',
+                hoverEnabled: false
+                
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
